@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Arka plan: yuvarlatılmış kare -->
+    <path
+        android:fillColor="#6750A4"
+        android:pathData="M12,2 L36,2 Q46,2 46,12 L46,36 Q46,46 36,46 L12,46 Q2,46 2,36 L2,12 Q2,2 12,2 Z" />
+    <!-- Kum saati -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M15,10 L33,10 L33,14 L28,20 L33,26 L33,38 L15,38 L15,26 L20,20 L15,14 Z" />
+    <path
+        android:fillColor="#6750A4"
+        android:pathData="M18,14 L30,14 L24,20 Z" />
+    <path
+        android:fillColor="#6750A4"
+        android:pathData="M24,24 L29,34 L19,34 Z" />
+</vector>
