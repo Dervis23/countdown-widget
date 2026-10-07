@@ -18,13 +18,20 @@ jobs:
           distribution: temurin
           java-version: 17
 
+      - name: Android SDK kur
+        uses: android-actions/setup-android@v3
+
+      - name: Android platform yükle
+        run: |
+          sdkmanager --install "platforms;android-35" "build-tools;35.0.0"
+
       - name: Gradle kur
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: "8.14.3"
 
       - name: Debug APK derle
-        run: gradle :app:assembleDebug --no-daemon
+        run: ./gradlew clean :app:assembleDebug --no-daemon
 
       - name: APK'yı yükle (artifact)
         uses: actions/upload-artifact@v4
